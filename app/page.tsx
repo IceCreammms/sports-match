@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import Landing from "@/elements/landing";
 import Horizontal from "@/elements/horizontal";
