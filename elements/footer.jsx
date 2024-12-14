@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-white h-screen w-screen flex items-center justify-center">
+    <div className="bg-white h-full w-full flex items-center justify-center">
       <div className="bg-cover bg-[url('/default.png')] h-screen w-screen p-10">
         <div className="flex flex-col h-full w-full">
           <h1 className="font-[family-name:var(--font-maru-mega)] text-[220px]">
