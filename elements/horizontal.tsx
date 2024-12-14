@@ -1,42 +1,47 @@
 "use client";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Horizontal() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
   useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: "-300vw",
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "+=3000",
-          scrub: 0.5,
-          pin: true,
-          snap: {
-            snapTo: 1 / 3,
-            duration: 0.1,
-          },
-        },
-      }
-    );
+    const initGSAP = async () => {
+      const gsap = (await import("gsap")).default;
+      const ScrollTrigger = (await import("gsap/dist/ScrollTrigger")).default;
 
-    return () => {
-      pin.kill();
+      gsap.registerPlugin(ScrollTrigger);
+
+      const pin = gsap.fromTo(
+        sectionRef.current,
+        {
+          translateX: 0,
+        },
+        {
+          translateX: "-300vw",
+          ease: "none",
+          duration: 1,
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            start: "top top",
+            end: "+=3000",
+            scrub: 0.5,
+            pin: true,
+            snap: {
+              snapTo: 1 / 3,
+              duration: 0.1,
+            },
+          },
+        }
+      );
+
+      return () => {
+        pin.kill();
+      };
     };
+
+    initGSAP();
   }, []);
 
   return (
