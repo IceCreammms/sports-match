@@ -1,7 +1,7 @@
-import { ReactLenis } from 'lenis/react'
+import { ReactLenis } from "lenis/react";
 
 import localFont from "next/font/local";
-import './globals.css';
+import "./globals.css";
 
 const satoshi = localFont({
   src: [
@@ -16,6 +16,11 @@ const satoshi = localFont({
       style: "normal",
     },
     {
+      path: "./fonts/Satoshi-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
       path: "./fonts/Satoshi-Bold.woff",
       weight: "700",
       style: "normal",
@@ -27,7 +32,7 @@ const satoshi = localFont({
     },
   ],
   variable: "--font-satoshi",
-})
+});
 
 const maruMega = localFont({
   src: "./fonts/GT-Maru-Mega.woff2",

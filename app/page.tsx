@@ -1,7 +1,6 @@
-
-import Image from "next/image";
-import Landing from "@/elements/landing";
+import Footer from "@/elements/footer";
 import Horizontal from "@/elements/horizontal";
+import Landing from "@/elements/landing";
 import Physics from "@/elements/physics";
 //font-[family-name:var(--font-satoshi)]
 export default function Home() {
@@ -10,6 +9,7 @@ export default function Home() {
       <Landing />
       <Horizontal />
       <Physics />
+      <Footer />
     </div>
   );
 }
