@@ -13,47 +13,115 @@ export default function Horizontal() {
 
       gsap.registerPlugin(ScrollTrigger);
 
-      const pin = gsap.fromTo(
-        sectionRef.current,
-        {
-          translateX: 0,
+      gsap.to(sectionRef.current, {
+        translateX: "-300vw",
+        ease: "none",
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          start: "top top",
+          end: "+=3000",
+          scrub: 0.5,
+          pin: true,
         },
-        {
-          translateX: () => `-${sectionRef.current.offsetWidth - window.innerWidth}px`,
-          ease: "none",
-          duration: 1,
-          scrollTrigger: {
-            trigger: triggerRef.current,
-            start: "top top",
-            end: "+=3000",
-            scrub: true,
-            pin: true,
-          },
-        }
-      );
-
-      return () => {
-        pin.kill();
-      };
+      });
     };
 
     initGSAP();
   }, []);
 
   return (
-    <section ref={triggerRef} className="h-[100vh] relative overflow-hidden">
-      <div ref={sectionRef} className="flex absolute top-0 left-0 w-fit">
+    <section
+      ref={triggerRef}
+      className="h-[100vh] relative overflow-hidden bg-white"
+    >
+      <div ref={sectionRef} className="flex absolute top-0 left-0">
         <div className="w-screen h-[100vh] flex justify-center items-center flex-shrink-0">
-          <div className="font-[family-name:var(--font-maru-mega)] text-[220px] bg-clip-text text-transparent bg-[url('/default.png')] bg-cover bg-center">
-            How it works?
+          <div className="relative">
+            <div className="font-[family-name:var(--font-maru-mega)] text-[220px] absolute -right-2 top-2 text-black">
+              How it works?
+            </div>
+            <div
+              className="font-[family-name:var(--font-maru-mega)] text-[220px] relative"
+              style={{
+                backgroundImage: "url(/default.png)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                WebkitTextStroke: "2px black",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              How it works?
+            </div>
           </div>
         </div>
-        <p className="w-fit h-[100vh] flex items-center line-clamp-1">
-          <span className="font-[family-name:var(--font-maru-mega)] text-[220px] bg-clip-text text-transparent bg-[url('/default.png')] bg-cover bg-center whitespace-nowrap">Choose ur preference </span>
-          <span className="font-[family-name:var(--font-maru-mega)] text-[220px] bg-clip-text text-transparent bg-[url('/default.png')] bg-cover bg-center whitespace-nowrap ml-[200px]">Swipe </span>
-          <span className="font-[family-name:var(--font-maru-mega)] text-[220px] bg-clip-text text-transparent bg-[url('/default.png')] bg-cover bg-center whitespace-nowrap ml-[200px] mr-[10vw]">Share it with a friend !</span>
-        </p>
-        
+
+        <div className="w-screen h-[100vh] flex justify-center items-center flex-shrink-0">
+          <div className="relative">
+            <div className="font-[family-name:var(--font-maru-mega)] text-[220px] absolute -right-2 top-2 text-black">
+              Choose ur preference
+            </div>
+            <div
+              className="font-[family-name:var(--font-maru-mega)] text-[220px] relative"
+              style={{
+                backgroundImage: "url(/default.png)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                WebkitTextStroke: "2px black",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              Choose ur preference
+            </div>
+          </div>
+        </div>
+
+        <div className="w-screen h-[100vh] flex justify-center items-center flex-shrink-0">
+          <div className="relative">
+            <div className="font-[family-name:var(--font-maru-mega)] text-[220px] absolute -right-2 top-2 text-black">
+              Swipe
+            </div>
+            <div
+              className="font-[family-name:var(--font-maru-mega)] text-[220px] relative"
+              style={{
+                backgroundImage: "url(/default.png)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                WebkitTextStroke: "2px black",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              Swipe
+            </div>
+          </div>
+        </div>
+
+        <div className="w-screen h-[100vh] flex justify-center items-center flex-shrink-0">
+          <div className="relative">
+            <div className="font-[family-name:var(--font-maru-mega)] text-[180px] absolute -right-2 top-2 text-black">
+              Share it with a friend !
+            </div>
+            <div
+              className="font-[family-name:var(--font-maru-mega)] text-[180px] relative"
+              style={{
+                backgroundImage: "url(/default.png)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                WebkitTextStroke: "2px black",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              Share it with a friend !
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

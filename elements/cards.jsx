@@ -57,8 +57,8 @@ const ResultPopup = ({ sport, onReset }) => {
   }, []);
 
   return (
-    <div className="absolute inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
-      <div className="w-full max-w-2xl bg-white rounded-[2rem] overflow-hidden">
+    <div className="absolute inset-0 z-50 bg-black/50 flex items-center justify-center p-4 text-black">
+      <div className="w-full max-w-3xl bg-white rounded-[2rem] overflow-hidden">
         <div className="flex flex-col md:flex-row">
           <div className="p-8 flex-1">
             <h2 className="text-4xl font-black mb-6">{sport.name}</h2>
@@ -78,7 +78,7 @@ const ResultPopup = ({ sport, onReset }) => {
               className="mt-8 flex items-center gap-2 text-sm text-gray-500 hover:text-black"
             >
               <RotateCcw className="w-4 h-4" />
-              Réessayer
+              Take the quiz again
             </button>
           </div>
 
@@ -153,7 +153,7 @@ export default function SportSwipe() {
     animateCard(isRight ? 1 : -1);
   };
 
-  const handleDragEnd = (info) => {
+  const handleDragEnd = (event, info) => {
     if (info.offset.x > 100) {
       handleButtonClick(true);
     } else if (info.offset.x < -100) {
@@ -180,80 +180,82 @@ export default function SportSwipe() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 relative">
-      <div className="w-[380px] h-[700px] bg-black rounded-[3rem] p-4 shadow-2xl relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-6 bg-black rounded-b-3xl"></div>
+    <div id="quizz">
 
-        <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-          <div className="h-full p-6">
-            <div className="mb-8 text-center">
-              <span className="font-mono text-xl font-bold border-4 border-black px-4 py-2 bg-white">
-                {currentQuestion + 1} / {questions.length}
-              </span>
-            </div>
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 relative">
+        <div className="absolute w-[80vh] h-[80vh] rounded-[1000px] bg-[url('/default.png')] bg-cover"></div>
+        <div className="w-[350px] h-[700px] border-8 border-zinc-800 rounded-[3rem] p-4 relative bg-white">
+          <div className="absolute top-0 bg-zinc-800 left-1/2 -translate-x-1/2 w-40 h-4 rounded-b-3xl"></div>
 
-            <div className="flex flex-col items-center justify-between h-[calc(100%-6rem)]">
-              <motion.div
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                style={{ x, rotate }}
-                onDragEnd={handleDragEnd}
-                className={`touch-none w-full ${
-                  cardColors[currentQuestion % cardColors.length]
-                } border-8 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] cursor-grab active:cursor-grabbing`}
-              >
-                <div className="w-full aspect-square overflow-hidden relative">
-                  {allGifs.map(
-                    (gif, index) =>
-                      gif && (
-                        <div key={index} className="absolute inset-0">
-                          {" "}
-                          <Image
-                            src={gif}
-                            alt={`Question ${index + 1}`}
-                            className={`w-full h-full object-cover pointer-events-none transition-opacity duration-300 ${
-                              index === currentQuestion
+          <div className="w-full h-full bg-cover rounded-[2.5rem] overflow-hidden relative">
+            <div className="h-full pt-10">
+              <div className="mb-12 text-center">
+                <span className="text-xl font-bold px-4 py-2 mt-5 bg-zinc-700 text-white rounded-[100px] font-[family-name:var(--font-satoshi)]">
+                  {currentQuestion + 1} / {questions.length}
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center justify-between h-[calc(100%-3rem)]">
+                <motion.div
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  style={{ x, rotate }}
+                  onDragEnd={handleDragEnd}
+                  className={`touch-none w-4/5 ${cardColors[currentQuestion % cardColors.length]
+                    } border-4 rounded-xl border-black cursor-grab active:cursor-grabbing bg-white text-black p-4`}
+                >
+                  <div className="w-full aspect-square overflow-hidden relative">
+                    {allGifs.map(
+                      (gif, index) =>
+                        gif && (
+                          <div key={index} className="absolute inset-0">
+                            {" "}
+                            <Image
+                              src={gif}
+                              alt={`Question ${index + 1}`}
+                              className={`w-full rounded-xl h-full object-cover pointer-events-none transition-opacity duration-300 ${index === currentQuestion
                                 ? "opacity-100"
                                 : "opacity-0"
-                            }`}
-                            fill
-                            sizes="100%"
-                            unoptimized={true}
-                          />
-                        </div>
-                      )
-                  )}
-                </div>
+                                }`}
+                              fill
+                              sizes="100%"
+                              unoptimized={true}
+                            />
+                          </div>
+                        )
+                    )}
+                  </div>
 
-                <div className="p-4">
-                  <h2 className="text-xl font-bold font-mono">
-                    {questions[currentQuestion]?.question}
-                  </h2>
-                </div>
-              </motion.div>
+                  <div className="py-4">
+                    <h2 className="text-xl font-bold font-[family-name:var(--font-satoshi)]">
+                      {questions[currentQuestion]?.question}
+                    </h2>
+                  </div>
+                </motion.div>
 
-              <div className="flex gap-8 mb-4">
-                <button
-                  onClick={() => handleButtonClick(false)}
-                  className="w-16 h-16 border-8 border-black bg-red-200 rounded-full flex items-center justify-center hover:bg-red-300 transition-colors shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
-                >
-                  <X className="w-8 h-8" />
-                </button>
-                <button
-                  onClick={() => handleButtonClick(true)}
-                  className="w-16 h-16 border-8 border-black bg-green-200 rounded-full flex items-center justify-center hover:bg-green-300 transition-colors shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
-                >
-                  <Check className="w-8 h-8" />
-                </button>
+                <div className="flex bg-zinc-700 w-full rounded-[100px] py-2 justify-evenly mb-10">
+                  <button
+                    onClick={() => handleButtonClick(false)}
+                    className="w-[45%] h-12 bg-red-400 rounded-full flex items-center justify-center hover:bg-red-300"
+                  >
+                    <X className="w-8 h-8" />
+                  </button>
+                  <button
+                    onClick={() => handleButtonClick(true)}
+                    className="w-[45%] h-12 bg-green-400 rounded-full flex items-center justify-center hover:bg-green-300"
+                  >
+                    <Check className="w-8 h-8" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {showResult && matchedSport && (
-        <ResultPopup sport={matchedSport} onReset={resetQuiz} />
-      )}
+        {showResult && matchedSport && (
+          <ResultPopup sport={matchedSport} onReset={resetQuiz} />
+        )}
+      </div>
     </div>
   );
 }

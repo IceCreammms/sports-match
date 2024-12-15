@@ -2,7 +2,7 @@
   "sports": [
     {
       "name": "Basketball",
-      "description": "Le basketball est un sport collectif dynamique qui combine agilité et stratégie. Sur le terrain, les équipes s'affrontent pour marquer des paniers, développant esprit d'équipe et coordination. C'est un excellent moyen de rester en forme tout en s'amusant.",
+      "description": "Basketball is a dynamic team sport that combines agility and strategy. On the court, teams compete to score baskets, fostering teamwork and coordination. It's an excellent way to stay fit while having fun.",
       "criteria": {
         "team": true,
         "contact": true,
@@ -12,8 +12,8 @@
       }
     },
     {
-      "name": "Natation",
-      "description": "La natation est un sport complet qui fait travailler l'ensemble du corps sans impact. Dans l'eau, vous développez endurance et souplesse à votre rythme. Parfait pour la condition physique générale.",
+      "name": "Swimming",
+      "description": "Swimming is a full-body sport with no impact. In the water, you develop endurance and flexibility at your own pace. Perfect for overall fitness.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -24,7 +24,7 @@
     },
     {
       "name": "Tennis",
-      "description": "Le tennis est un sport de raquette qui demande précision et réactivité. Que ce soit en simple ou en double, il développe réflexes et condition physique. Un excellent choix pour ceux qui aiment le défi technique.",
+      "description": "Tennis is a racquet sport that requires precision and responsiveness. Whether played in singles or doubles, it develops reflexes and physical fitness. A great choice for those who enjoy technical challenges.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -34,8 +34,8 @@
       }
     },
     {
-      "name": "Football",
-      "description": "Le sport le plus populaire au monde ! Le football combine course, technique et esprit d'équipe. Sur le terrain, vous développez coordination et endurance tout en partageant des moments intenses avec vos coéquipiers.",
+      "name": "Soccer",
+      "description": "The most popular sport in the world! Soccer combines running, technique, and teamwork. On the field, you develop coordination and endurance while sharing intense moments with teammates.",
       "criteria": {
         "team": true,
         "contact": true,
@@ -46,7 +46,7 @@
     },
     {
       "name": "Yoga",
-      "description": "Le yoga est une pratique corps-esprit qui améliore force, souplesse et équilibre. À travers différentes postures, vous développez conscience corporelle et sérénité. Idéal pour réduire le stress.",
+      "description": "Yoga is a mind-body practice that enhances strength, flexibility, and balance. Through various poses, you develop body awareness and serenity. Ideal for stress reduction.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -56,8 +56,8 @@
       }
     },
     {
-      "name": "Escalade",
-      "description": "L'escalade combine force physique et mental. Chaque voie est un nouveau puzzle à résoudre, développant force, souplesse et capacité de résolution de problèmes.",
+      "name": "Climbing",
+      "description": "Climbing combines physical and mental strength. Each route is a new puzzle to solve, developing strength, flexibility, and problem-solving skills.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -67,8 +67,8 @@
       }
     },
     {
-      "name": "Boxe",
-      "description": "Sport de combat complet, la boxe développe force, rapidité et endurance. En plus du physique, elle renforce la confiance en soi et la discipline.",
+      "name": "Boxing",
+      "description": "Boxing is a complete combat sport that develops strength, speed, and endurance. In addition to physical benefits, it builds self-confidence and discipline.",
       "criteria": {
         "team": false,
         "contact": true,
@@ -79,7 +79,7 @@
     },
     {
       "name": "Volleyball",
-      "description": "Sport collectif sans contact, le volleyball développe explosivité et coordination. Les échanges rapides et le jeu d'équipe en font une activité dynamique et sociale.",
+      "description": "A non-contact team sport, volleyball enhances explosiveness and coordination. Quick exchanges and team play make it a dynamic and social activity.",
       "criteria": {
         "team": true,
         "contact": false,
@@ -89,8 +89,8 @@
       }
     },
     {
-      "name": "Vélo",
-      "description": "Le cyclisme offre liberté et découverte. Que ce soit sur route ou en montagne, il améliore endurance et force des jambes tout en profitant de l'extérieur.",
+      "name": "Cycling",
+      "description": "Cycling offers freedom and exploration. Whether on the road or in the mountains, it improves endurance and leg strength while enjoying the outdoors.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -100,8 +100,8 @@
       }
     },
     {
-      "name": "Arts Martiaux",
-      "description": "Les arts martiaux allient technique, discipline et développement personnel. À travers différentes techniques, vous progressez physiquement et mentalement.",
+      "name": "Martial Arts",
+      "description": "Martial arts combine technique, discipline, and personal development. Through various techniques, you progress physically and mentally.",
       "criteria": {
         "team": false,
         "contact": true,
@@ -112,7 +112,7 @@
     },
     {
       "name": "Golf",
-      "description": "Le golf est un sport de précision qui demande concentration et technique. Sur le parcours, vous combinez habileté et stratégie dans un cadre naturel apaisant.",
+      "description": "Golf is a precision sport that requires focus and technique. On the course, you combine skill and strategy in a peaceful natural setting.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -122,8 +122,8 @@
       }
     },
     {
-      "name": "Course à pied",
-      "description": "Simple et accessible, la course à pied est excellente pour la santé cardiovasculaire. Vous pouvez pratiquer où et quand vous voulez, à votre propre rythme.",
+      "name": "Running",
+      "description": "Simple and accessible, running is excellent for cardiovascular health. You can practice anytime, anywhere, at your own pace.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -134,7 +134,7 @@
     },
     {
       "name": "CrossFit",
-      "description": "Le CrossFit combine différents mouvements fonctionnels à haute intensité. Les entraînements variés développent force, endurance et agilité de façon complète.",
+      "description": "CrossFit combines various functional movements at high intensity. The varied workouts develop strength, endurance, and agility comprehensively.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -144,8 +144,8 @@
       }
     },
     {
-      "name": "Tennis de table",
-      "description": "Sport de raquette rapide et technique, le tennis de table développe réflexes et coordination. Les échanges dynamiques en font une activité ludique et intense.",
+      "name": "Table Tennis",
+      "description": "A fast and technical racquet sport, table tennis enhances reflexes and coordination. The dynamic exchanges make it a fun and intense activity.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -155,8 +155,8 @@
       }
     },
     {
-      "name": "Surf",
-      "description": "Le surf offre sensations fortes et connexion avec la nature. Sur les vagues, vous développez équilibre et lecture de l'environnement dans un cadre unique.",
+      "name": "Surfing",
+      "description": "Surfing offers thrills and a connection with nature. On the waves, you develop balance and environmental awareness in a unique setting.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -166,8 +166,8 @@
       }
     },
     {
-      "name": "Danse",
-      "description": "La danse allie expression artistique et exercice physique. À travers différents styles, vous développez coordination, souplesse et sens du rythme.",
+      "name": "Dance",
+      "description": "Dance combines artistic expression and physical exercise. Through various styles, you develop coordination, flexibility, and rhythm.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -178,7 +178,7 @@
     },
     {
       "name": "Rugby",
-      "description": "Sport collectif intense, le rugby développe esprit d'équipe et robustesse. Sur le terrain, stratégie collective et engagement physique sont essentiels.",
+      "description": "A high-intensity team sport, rugby fosters teamwork and resilience. On the field, collective strategy and physical commitment are essential.",
       "criteria": {
         "team": true,
         "contact": true,
@@ -189,7 +189,7 @@
     },
     {
       "name": "Pilates",
-      "description": "Le Pilates renforce en douceur les muscles profonds. Les exercices contrôlés améliorent posture et souplesse, parfait pour le bien-être quotidien.",
+      "description": "Pilates gently strengthens the deep muscles. The controlled exercises improve posture and flexibility, perfect for daily well-being.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -199,8 +199,8 @@
       }
     },
     {
-      "name": "Hockey sur glace",
-      "description": "Sport rapide et technique, le hockey sur glace combine patinage et manipulation de palet. L'esprit d'équipe et les actions rapides en font un sport passionnant.",
+      "name": "Ice Hockey",
+      "description": "A fast and technical sport, ice hockey combines skating and puck handling. Team spirit and quick actions make it an exciting sport.",
       "criteria": {
         "team": true,
         "contact": true,
@@ -210,8 +210,8 @@
       }
     },
     {
-      "name": "Tir à l'arc",
-      "description": "Sport de précision, le tir à l'arc développe concentration et maîtrise de soi. Chaque tir est un exercice de patience et de technique.",
+      "name": "Archery",
+      "description": "A precision sport, archery enhances concentration and self-control. Each shot is an exercise in patience and technique.",
       "criteria": {
         "team": false,
         "contact": false,
@@ -221,100 +221,98 @@
       }
     }
   ],
-
   "questions": [
     {
       "id": 1,
-      "question": "Préfères-tu faire du sport seul ou en équipe ?",
+      "question": "Do you prefer playing sports as part of a team?",
       "mapping": {
-        "left": "seul",
-        "right": "équipe"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "team sport"
     },
     {
       "id": 2,
-      "question": "Es-tu à l'aise avec les sports de contact ?",
+      "question": "Are you comfortable with contact sports?",
       "mapping": {
-        "left": "pas de contact",
-        "right": "contact ok"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "boxing sport"
     },
     {
       "id": 3,
-      "question": "Aimes-tu les activités intenses qui font beaucoup transpirer ?",
+      "question": "Do you enjoy high-intensity activities that make you sweat?",
       "mapping": {
-        "left": "faible intensité",
-        "right": "haute intensité"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "workout intense"
     },
     {
       "id": 4,
-      "question": "Préfères-tu faire du sport en extérieur ou en intérieur ?",
+      "question": "Do you prefer outdoor sports?",
       "mapping": {
-        "left": "intérieur",
-        "right": "extérieur"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "outdoor sports"
     },
     {
       "id": 5,
-      "question": "Aimes-tu les sports qui demandent de la stratégie ?",
+      "question": "Do you like sports that require strategy?",
       "mapping": {
-        "left": "spontané",
-        "right": "stratégique"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "chess sport"
     },
     {
       "id": 6,
-      "question": "Es-tu prêt à investir dans du matériel sportif ?",
+      "question": "Are you willing to invest in sports equipment?",
       "mapping": {
-        "left": "peu de matériel",
-        "right": "équipement ok"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "sports equipment"
     },
     {
       "id": 7,
-      "question": "Préfères-tu les sports qui demandent de l'endurance ?",
+      "question": "Do you prefer sports that require endurance?",
       "mapping": {
-        "left": "courte durée",
-        "right": "endurance"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "marathon running"
     },
     {
       "id": 8,
-      "question": "Aimes-tu apprendre de nouveaux mouvements techniques ?",
+      "question": "Do you like learning new technical movements?",
       "mapping": {
-        "left": "mouvements simples",
-        "right": "mouvements techniques"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "gymnastics skill"
     },
     {
       "id": 9,
-      "question": "Veux-tu un sport que tu peux pratiquer n'importe où ?",
+      "question": "Do you want a sport you can practice anywhere?",
       "mapping": {
-        "left": "lieu spécifique",
-        "right": "partout"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "street workout"
     },
     {
       "id": 10,
-      "question": "Cherches-tu à te dépasser physiquement ?",
+      "question": "Are you looking to physically push yourself?",
       "mapping": {
-        "left": "maintien forme",
-        "right": "dépassement"
+        "left": "no",
+        "right": "yes"
       },
       "gifKeyword": "sports motivation"
     }
   ],
-
   "cardColors": [
     "bg-blue-200",
     "bg-green-200",

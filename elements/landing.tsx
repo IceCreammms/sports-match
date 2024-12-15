@@ -2,8 +2,8 @@ import Button from "@/components/button";
 
 export default function Landing() {
   return (
-    <div className="h-[100vh] w-full flex justify-center items-center">
-      <div className="bg-cover bg-[url('/default.png')] h-[calc(100vh-5rem)] w-[1400px] overflow-hidden flex flex-col justify-center items-center">
+    <div className="bg-white min-h-screen w-full p-8">
+      <div className="bg-cover bg-[url('/default.png')] min-h-[calc(100vh-4rem)] w-full p-10 border-4 border-white flex flex-col justify-center items-center">
         <div className="font-[family-name:var(--font-maru-mega)] text-[220px]">
           PlayPulse
         </div>
