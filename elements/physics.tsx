@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Physics() {
   const sceneRef = useRef(null);
-  const divRefs = useRef([]);
+  const divRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [matterInitialized, setMatterInitialized] = useState(false);
 
   const jsonData = [
@@ -26,9 +26,10 @@ export default function Physics() {
     { text: "Energetic" },
   ];
 
-  const calculateTextDimensions = (text, font = "24px Arial") => {
+  const calculateTextDimensions = (text:string, font = "24px Arial") => {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
+    if(context === null) return { width: 0, height: 0 };
     context.font = font;
     const metrics = context.measureText(text);
     return {
@@ -77,6 +78,7 @@ export default function Physics() {
     const engine = Engine.create();
 
     // Create renderer
+    if (!sceneRef.current) return;
     const render = Render.create({
       element: sceneRef.current,
       engine: engine,
@@ -124,7 +126,7 @@ export default function Physics() {
     );
 
     // Create shapes
-    const shapes = [];
+    const shapes:any[] = [];
     for (let i = 0; i < jsonData.length; i++) {
       const { text } = jsonData[i];
       const { width, height } = calculateTextDimensions(text);
@@ -164,10 +166,10 @@ export default function Physics() {
     ]);
 
     const updateDivs = () => {
-      const scalingFactor = render.options.width / window.innerWidth;
+      const scalingFactor = render.options?.width ? render.options.width / window.innerWidth : 1;
 
       shapes.forEach((body, index) => {
-        const div = divRefs.current[index];
+        const div:any = divRefs.current[index];
         const { text } = jsonData[index];
         const { width, height } = calculateTextDimensions(text);
         if (div) {
@@ -189,7 +191,7 @@ export default function Physics() {
 
     return () => {
       Matter.Render.stop(render);
-      Matter.World.clear(engine.world);
+      Matter.World.clear(engine.world, false);
       Matter.Engine.clear(engine);
       render.canvas.remove();
       render.textures = {};
@@ -210,7 +212,9 @@ export default function Physics() {
           {jsonData.map((data, index) => (
             <div
               key={index}
-              ref={(el) => (divRefs.current[index] = el)}
+              ref={(el) => {
+                divRefs.current[index] = el;
+              }}
               className="absolute bg-white text-center rounded-[100px] flex items-center justify-center font-bold text-black text-[24px] z-30"
               style={{
                 visibility: matterInitialized ? "visible" : "hidden",
