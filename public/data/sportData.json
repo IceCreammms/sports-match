@@ -1,0 +1,330 @@
+{
+  "sports": [
+    {
+      "name": "Basketball",
+      "description": "Le basketball est un sport collectif dynamique qui combine agilité et stratégie. Sur le terrain, les équipes s'affrontent pour marquer des paniers, développant esprit d'équipe et coordination. C'est un excellent moyen de rester en forme tout en s'amusant.",
+      "criteria": {
+        "team": true,
+        "contact": true,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Natation",
+      "description": "La natation est un sport complet qui fait travailler l'ensemble du corps sans impact. Dans l'eau, vous développez endurance et souplesse à votre rythme. Parfait pour la condition physique générale.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Tennis",
+      "description": "Le tennis est un sport de raquette qui demande précision et réactivité. Que ce soit en simple ou en double, il développe réflexes et condition physique. Un excellent choix pour ceux qui aiment le défi technique.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Football",
+      "description": "Le sport le plus populaire au monde ! Le football combine course, technique et esprit d'équipe. Sur le terrain, vous développez coordination et endurance tout en partageant des moments intenses avec vos coéquipiers.",
+      "criteria": {
+        "team": true,
+        "contact": true,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Yoga",
+      "description": "Le yoga est une pratique corps-esprit qui améliore force, souplesse et équilibre. À travers différentes postures, vous développez conscience corporelle et sérénité. Idéal pour réduire le stress.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": false,
+        "outdoor": false,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Escalade",
+      "description": "L'escalade combine force physique et mental. Chaque voie est un nouveau puzzle à résoudre, développant force, souplesse et capacité de résolution de problèmes.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Boxe",
+      "description": "Sport de combat complet, la boxe développe force, rapidité et endurance. En plus du physique, elle renforce la confiance en soi et la discipline.",
+      "criteria": {
+        "team": false,
+        "contact": true,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Volleyball",
+      "description": "Sport collectif sans contact, le volleyball développe explosivité et coordination. Les échanges rapides et le jeu d'équipe en font une activité dynamique et sociale.",
+      "criteria": {
+        "team": true,
+        "contact": false,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Vélo",
+      "description": "Le cyclisme offre liberté et découverte. Que ce soit sur route ou en montagne, il améliore endurance et force des jambes tout en profitant de l'extérieur.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Arts Martiaux",
+      "description": "Les arts martiaux allient technique, discipline et développement personnel. À travers différentes techniques, vous progressez physiquement et mentalement.",
+      "criteria": {
+        "team": false,
+        "contact": true,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Golf",
+      "description": "Le golf est un sport de précision qui demande concentration et technique. Sur le parcours, vous combinez habileté et stratégie dans un cadre naturel apaisant.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": false,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Course à pied",
+      "description": "Simple et accessible, la course à pied est excellente pour la santé cardiovasculaire. Vous pouvez pratiquer où et quand vous voulez, à votre propre rythme.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": false
+      }
+    },
+    {
+      "name": "CrossFit",
+      "description": "Le CrossFit combine différents mouvements fonctionnels à haute intensité. Les entraînements variés développent force, endurance et agilité de façon complète.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Tennis de table",
+      "description": "Sport de raquette rapide et technique, le tennis de table développe réflexes et coordination. Les échanges dynamiques en font une activité ludique et intense.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": false,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Surf",
+      "description": "Le surf offre sensations fortes et connexion avec la nature. Sur les vagues, vous développez équilibre et lecture de l'environnement dans un cadre unique.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Danse",
+      "description": "La danse allie expression artistique et exercice physique. À travers différents styles, vous développez coordination, souplesse et sens du rythme.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Rugby",
+      "description": "Sport collectif intense, le rugby développe esprit d'équipe et robustesse. Sur le terrain, stratégie collective et engagement physique sont essentiels.",
+      "criteria": {
+        "team": true,
+        "contact": true,
+        "intensity": true,
+        "outdoor": true,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Pilates",
+      "description": "Le Pilates renforce en douceur les muscles profonds. Les exercices contrôlés améliorent posture et souplesse, parfait pour le bien-être quotidien.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": false,
+        "outdoor": false,
+        "strategy": false
+      }
+    },
+    {
+      "name": "Hockey sur glace",
+      "description": "Sport rapide et technique, le hockey sur glace combine patinage et manipulation de palet. L'esprit d'équipe et les actions rapides en font un sport passionnant.",
+      "criteria": {
+        "team": true,
+        "contact": true,
+        "intensity": true,
+        "outdoor": false,
+        "strategy": true
+      }
+    },
+    {
+      "name": "Tir à l'arc",
+      "description": "Sport de précision, le tir à l'arc développe concentration et maîtrise de soi. Chaque tir est un exercice de patience et de technique.",
+      "criteria": {
+        "team": false,
+        "contact": false,
+        "intensity": false,
+        "outdoor": true,
+        "strategy": true
+      }
+    }
+  ],
+
+  "questions": [
+    {
+      "id": 1,
+      "question": "Préfères-tu faire du sport seul ou en équipe ?",
+      "mapping": {
+        "left": "seul",
+        "right": "équipe"
+      },
+      "gifKeyword": "team sport"
+    },
+    {
+      "id": 2,
+      "question": "Es-tu à l'aise avec les sports de contact ?",
+      "mapping": {
+        "left": "pas de contact",
+        "right": "contact ok"
+      },
+      "gifKeyword": "boxing sport"
+    },
+    {
+      "id": 3,
+      "question": "Aimes-tu les activités intenses qui font beaucoup transpirer ?",
+      "mapping": {
+        "left": "faible intensité",
+        "right": "haute intensité"
+      },
+      "gifKeyword": "workout intense"
+    },
+    {
+      "id": 4,
+      "question": "Préfères-tu faire du sport en extérieur ou en intérieur ?",
+      "mapping": {
+        "left": "intérieur",
+        "right": "extérieur"
+      },
+      "gifKeyword": "outdoor sports"
+    },
+    {
+      "id": 5,
+      "question": "Aimes-tu les sports qui demandent de la stratégie ?",
+      "mapping": {
+        "left": "spontané",
+        "right": "stratégique"
+      },
+      "gifKeyword": "chess sport"
+    },
+    {
+      "id": 6,
+      "question": "Es-tu prêt à investir dans du matériel sportif ?",
+      "mapping": {
+        "left": "peu de matériel",
+        "right": "équipement ok"
+      },
+      "gifKeyword": "sports equipment"
+    },
+    {
+      "id": 7,
+      "question": "Préfères-tu les sports qui demandent de l'endurance ?",
+      "mapping": {
+        "left": "courte durée",
+        "right": "endurance"
+      },
+      "gifKeyword": "marathon running"
+    },
+    {
+      "id": 8,
+      "question": "Aimes-tu apprendre de nouveaux mouvements techniques ?",
+      "mapping": {
+        "left": "mouvements simples",
+        "right": "mouvements techniques"
+      },
+      "gifKeyword": "gymnastics skill"
+    },
+    {
+      "id": 9,
+      "question": "Veux-tu un sport que tu peux pratiquer n'importe où ?",
+      "mapping": {
+        "left": "lieu spécifique",
+        "right": "partout"
+      },
+      "gifKeyword": "street workout"
+    },
+    {
+      "id": 10,
+      "question": "Cherches-tu à te dépasser physiquement ?",
+      "mapping": {
+        "left": "maintien forme",
+        "right": "dépassement"
+      },
+      "gifKeyword": "sports motivation"
+    }
+  ],
+
+  "cardColors": [
+    "bg-blue-200",
+    "bg-green-200",
+    "bg-yellow-200",
+    "bg-purple-200",
+    "bg-pink-200",
+    "bg-orange-200",
+    "bg-teal-200",
+    "bg-red-200",
+    "bg-indigo-200",
+    "bg-lime-200"
+  ]
+}
