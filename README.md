@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sports Quiz Matching App
 
-## Getting Started
+A minimalistic front-end application built during a one-week challenge to create a sports matching app based on a quiz.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application leverages modern web technologies to deliver an engaging user experience:
+- **Next.js**: For server-side rendering and efficient routing.
+- **Tailwind CSS**: For rapid and responsive styling.
+- **GSAP & Framer Motion**: For smooth, high-performance animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built under a tight deadline, this project demonstrates creative problem-solving and the ability to quickly deliver a functional and visually appealing app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Interactive Quiz**: Match users to sports based on their quiz responses.
+- **Dynamic Animations**: Enjoy engaging transitions and animations throughout the app.
+- **Modern Stack**: Utilizes Next.js for performance and scalability.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GSAP](https://greensock.com/gsap/)
+- [Framer Motion](https://motion.dev/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the Repository:**
 
-## Deploy on Vercel
+   `bash git clone https://github.com/IceCreammms/sports-match.git` 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Navigate to the Project Directory:**
+    
+    `cd sports-match` 
+    
+3.  **Install Dependencies:**
+    
+    Using npm:
+    
+    `npm install` 
+    
+    or using yarn:
+    
+    `yarn` 
+    
+4.  **Run the Development Server:**
+    
+    Using npm:
+    
+    `npm run dev` 
+    
+    or using yarn:
+    
+    `yarn dev` 
+    
+5.  **Open in Browser:**
+    
+    Visit http://localhost:3000 to see the app in action.
+    
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+
+-   **Quiz Interaction**: Answer the quiz questions to find your matching sport.
+-   **Smooth Animations**: Enjoy interactive animations as you navigate through the quiz.
+
+## Contributors
+
+This project was built collaboratively.  
+
+#### Code
+-   [Fadili](https://github.com/fadiliii)
+-   [IceCreammms](https://github.com/IceCreammms)
+
+#### Design
+-   [Poire](https://www.instagram.com/poire_jm/)
